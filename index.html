@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Car Race Game</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-</head>
-<body>
-    <canvas> id="canvas" width="800" height="500" </canvas>
-    <script src="css/background.js"></script>
-    <script src="css/game.js"></script>
-    <script src="main.js"></script>
-</body>
-
+<!doctype html>
+<html>
+  <head>
+    <title>Retro Race Car Game</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="road">
+        </div>
+      </div>
+      <div class="game-over">
+        <button class="btn-retry">Retry</button>
+      </div>
+      <div class="scoreboard">
+        <p>Tiempo</p>
+        <span id="score"></span>
+        <p>Balas</p>
+        <span id="bullets"></span>
+      </div>
+      <p>Presionar "SpaceBar" para disparar</p>
+    </div>
+    <script src="js/Bullet.js"></script>
+    <script src="js/Car.js"></script>
+    <script src="js/Traffic.js"></script>
+    <script src="js/CarGame.js"></script>
+  </body>
 </html>
